@@ -1,0 +1,88 @@
+# Pages CMS : interface d'édition des contenus d'Ancrage et Horizons
+# https://app.pagescms.org
+media:
+  input: assets
+  output: /assets
+content:
+  - name: accueil
+    label: "Accueil et présentation"
+    type: file
+    path: contenus/accueil.json
+    format: json
+    fields:
+      - { name: heroEyebrow, label: "Petit titre sur la photo", type: string }
+      - { name: heroTitle, label: "Grand titre", type: string }
+      - { name: heroKicker, label: "Accroche", type: string }
+      - { name: heroLead, label: "Phrase d'introduction", type: text }
+      - { name: heroImage, label: "Photographie du bandeau", type: image, description: "Choisir ou importer une photo panoramique." }
+      - { name: introEyebrow, label: "Petit titre de présentation", type: string }
+      - { name: introTitle, label: "Titre de présentation", type: string }
+      - name: introParagraphs
+        label: "Paragraphes de présentation"
+        type: text
+        list: true
+      - { name: missionTitle, label: "Notre conviction", type: text }
+      - { name: missionLead, label: "Texte sous notre conviction", type: text }
+      - { name: mottoTitle, label: "Phrase Nourrir l'esprit, nourrir le corps", type: string }
+      - { name: mottoText, label: "Texte associé", type: text }
+  - name: domaines
+    label: "Domaines d'action"
+    type: file
+    path: contenus/domaines.json
+    format: json
+    fields:
+      - { name: actionsEyebrow, label: "Petit titre", type: string }
+      - { name: actionsTitle, label: "Titre de la section", type: string }
+      - { name: actionsLead, label: "Introduction", type: text }
+      - name: actions
+        label: "Les cinq domaines"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: icon, label: "Pictogramme", type: string }
+          - { name: title, label: "Intitulé", type: string }
+          - { name: kicker, label: "Accroche", type: string }
+          - { name: description, label: "Description", type: text }
+  - name: caraibe
+    label: "Ouverture caribéenne"
+    type: file
+    path: contenus/caraibe.json
+    format: json
+    fields:
+      - { name: caribbeanEyebrow, label: "Petit titre", type: string }
+      - { name: caribbeanTitle, label: "Titre", type: string }
+      - { name: caribbeanParagraphs, label: "Paragraphes", type: text, list: true }
+  - name: projets
+    label: "Projets"
+    type: file
+    path: contenus/projets.json
+    format: json
+    fields:
+      - { name: projectsEyebrow, label: "Petit titre", type: string }
+      - { name: projectsTitle, label: "Titre", type: string }
+      - { name: projectsLead, label: "Introduction", type: text }
+      - name: projects
+        label: "Fiches courtes des projets"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: "Nom du projet", type: string }
+          - { name: description, label: "Résumé", type: text }
+  - name: participer
+    label: "Adhésions et contact"
+    type: file
+    path: contenus/participer.json
+    format: json
+    fields:
+      - { name: joinTitle, label: "Titre pour participer", type: string }
+      - { name: joinText, label: "Texte pour participer", type: text }
+      - { name: adhesionUrl, label: "Lien HTTPS AssoConnect", type: string, description: "À compléter quand la page d'adhésion sera prête." }
+      - { name: contactTitle, label: "Titre contact", type: string }
+      - { name: contactText, label: "Texte contact", type: text }
+      - { name: contactInfo, label: "Coordonnées ou message temporaire", type: text }
