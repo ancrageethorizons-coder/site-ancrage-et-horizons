@@ -1,0 +1,27 @@
+{
+  "projectsEyebrow": "Nos projets",
+  "projectsTitle": "Des expériences qui prennent forme",
+  "projectsLead": "Découvrez plusieurs initiatives en préparation ou en développement. Leur présentation évoluera au fil de leur avancement.",
+  "projects": [
+    {
+      "title": "Zayann Ekspéryans",
+      "description": "Des expériences de terrain pour les jeunes, au croisement des apprentissages, de la découverte et de l'autonomie."
+    },
+    {
+      "title": "Le chemin de l'école hors les murs",
+      "description": "Des sorties et des parcours pédagogiques qui font du territoire une salle de classe à ciel ouvert."
+    },
+    {
+      "title": "Racines et Horizons",
+      "description": "Un projet de découverte des milieux, du patrimoine et des expériences partagées, notamment à Marie-Galante."
+    },
+    {
+      "title": "Traversées · Dominique",
+      "description": "Un projet d'ouverture caribéenne mêlant découverte, rencontres et échanges autour de la Dominique."
+    },
+    {
+      "title": "Journées Ancrage",
+      "description": "Des expériences associant marche, découverte du territoire, moments de ressourcement et convivialité."
+    }
+  ]
+}

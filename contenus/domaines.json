@@ -1,0 +1,37 @@
+{
+  "actionsEyebrow": "Nos domaines d'action",
+  "actionsTitle": "Des expériences qui créent du lien",
+  "actionsLead": "Cinq domaines complémentaires, une même volonté : relier les personnes, les cultures et le vivant.",
+  "actions": [
+    {
+      "icon": "🌱",
+      "title": "Éducation & jeunesse",
+      "kicker": "Apprendre autrement, découvrir par l'expérience.",
+      "description": "Nous concevons des parcours pédagogiques qui font du territoire un espace d'apprentissage. Découvertes environnementales, randonnées éducatives et expériences collectives encouragent la curiosité, l'autonomie et l'apprentissage par l'action."
+    },
+    {
+      "icon": "🌿",
+      "title": "Nature & territoires",
+      "kicker": "Explorer, comprendre et préserver le vivant.",
+      "description": "Nous invitons à découvrir les paysages et les écosystèmes de Guadeloupe et de la Caraïbe, à comprendre leurs richesses et leurs fragilités, et à développer une relation respectueuse avec notre environnement."
+    },
+    {
+      "icon": "🧵",
+      "title": "Cultures, patrimoine & savoir-faire",
+      "kicker": "Retrouver ses racines, transmettre et s'ouvrir au monde.",
+      "description": "Nous valorisons les mémoires, les héritages culturels et les pratiques artisanales du territoire. Les rencontres et la transmission entre générations nourrissent les identités et ouvrent au dialogue avec les autres cultures caribéennes."
+    },
+    {
+      "icon": "🤝",
+      "title": "Solidarité & inclusion",
+      "kicker": "Créer du lien, ouvrir de nouveaux horizons.",
+      "description": "Nous souhaitons rendre les expériences de découverte et de partage accessibles à des publics variés, notamment aux personnes confrontées à des obstacles liés à l'âge, au handicap ou à leur situation sociale. Chacun doit pouvoir participer et trouver sa place."
+    },
+    {
+      "icon": "💚",
+      "title": "Sport, santé & épanouissement",
+      "kicker": "Bouger, se ressourcer, développer ses ressources.",
+      "description": "Nous favorisons l'activité physique, le bien-être mental, la confiance en soi et le développement personnel. La marche, la nature et les expériences partagées peuvent soutenir l'estime de soi et la capacité d'adaptation. Nous valorisons aussi une alimentation diversifiée et équilibrée, avec une attention aux produits locaux et au plaisir de manger ensemble."
+    }
+  ]
+}

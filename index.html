@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="description" content="Ancrage et Horizons, association guadeloupéenne : éducation, nature, cultures, solidarité, sport, santé et ouverture caribéenne.">
+<title>Ancrage et Horizons — Relier le vivant, agir ensemble</title>
+<style>
+:root{--green:#1F4A3F;--ochre:#D69A3C;--cream:#F7F4EE;--brown:#7A4E2E;--ink:#262626;--sand:#D9C8B5;--blue:#1F5A68;--muted:#5d685f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.68 'Source Sans 3',Arial,sans-serif}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.19}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500}h1{font-size:clamp(2.6rem,5.4vw,5.3rem)}h2{font-size:clamp(2rem,3.3vw,3.05rem)}h3{font-size:1.25rem}a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:10px max(5vw,20px);background:var(--cream);position:relative;z-index:2}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green);font:700 17px Montserrat,Arial,sans-serif;letter-spacing:.03em}.brand img{width:78px;height:60px;object-fit:contain}.nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.nav a{text-decoration:none;font:600 13px Montserrat,Arial,sans-serif}.nav a:hover{color:var(--brown)}.nav .navcta{padding:11px 18px;border-radius:6px;background:var(--green);color:white}.nav .navcta:hover{background:var(--blue);color:white}
+.hero{min-height:600px;background:linear-gradient(90deg,rgba(10,35,29,.76),rgba(10,35,29,.26)),url('assets/accueil.webp') center 45%/cover;display:flex;align-items:center}.hero-content{max-width:830px;margin-left:max(6vw,25px);padding:84px 22px 84px 0;color:white}.eyebrow{font:700 12px Montserrat,Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--ochre);margin-bottom:18px}.hero h1{max-width:790px;margin-bottom:16px}.hero-kicker{font-size:clamp(1.12rem,2.1vw,1.48rem);font-weight:700;margin-bottom:12px}.hero-lead{font-size:clamp(1.06rem,1.9vw,1.25rem);max-width:660px}.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:13px 21px;border-radius:5px;background:var(--ochre);color:#20251f;text-decoration:none;font:700 14px Montserrat,Arial,sans-serif;transition:transform .18s,background .18s}.btn:hover{transform:translateY(-2px);background:#e4a747}.btn.alt{background:transparent;color:white;border:1px solid white}.btn.alt:hover{background:#ffffff28}
+.container{max-width:1180px;margin:auto;padding:82px 24px}.intro{text-align:center;max-width:790px;margin:0 auto 43px}.intro h2{margin-bottom:16px}.intro p{margin-bottom:0}.intro-narrow{max-width:850px}.section-muted{background:#ece8df}.split{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}.text-stack p{margin-bottom:16px}.panel{background:var(--green);color:white;border-radius:12px;padding:42px;box-shadow:0 10px 32px #15372b15}.panel h2{font-size:clamp(1.65rem,2.8vw,2.45rem);color:white}.panel p:last-child{margin:0}
+.cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}.card{grid-column:span 2;background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px #15372b12;display:flex;flex-direction:column}.card:nth-child(4){grid-column:2/span 2}.card:nth-child(5){grid-column:4/span 2}.art{height:130px;display:grid;place-items:center;color:white;font-size:49px}.card:nth-child(5n+1) .art{background:linear-gradient(135deg,#38695b,#86a68c)}.card:nth-child(5n+2) .art{background:linear-gradient(135deg,#1f5a68,#7bb5a4)}.card:nth-child(5n+3) .art{background:linear-gradient(135deg,#7a4e2e,#d69a3c)}.card:nth-child(5n+4) .art{background:linear-gradient(135deg,#44604c,#b6b17a)}.card:nth-child(5n+5) .art{background:linear-gradient(135deg,#4b5b59,#8aa8a4)}.card-body{padding:22px;flex:1}.card h3{color:var(--green);margin-bottom:10px}.card .kicker{color:var(--brown);font-weight:700;line-height:1.45;margin-bottom:12px}.card .description{font-size:15px;line-height:1.65;margin:0}
+.motto{background:var(--green);color:white;text-align:center;padding:68px 24px}.motto-inner{max-width:790px;margin:auto}.motto h2{color:white;margin-bottom:15px}.motto p{font-size:1.1rem;margin:0}.motto .eyebrow{color:#e2b866}
+.caribbean{background:var(--sand)}.caribbean .panel{background:#fff;color:var(--green);border-left:6px solid var(--ochre)}.caribbean .panel h2{color:var(--green)}.caribbean p:last-child{margin-bottom:0}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.project{padding:26px;background:white;border-left:4px solid var(--ochre);border-radius:6px;min-height:190px}.project h3{color:var(--green);margin-bottom:11px}.project p{margin:0;font-size:15px}.join{text-align:center;background:#e6dac8;padding:73px 24px}.join .inner{max-width:790px;margin:auto}.join p{max-width:740px;margin:0 auto 24px}.notice{font-size:13px;color:var(--muted)}.contact-text{max-width:700px;margin:auto}footer{background:var(--green);color:white;padding:34px 6vw;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer small{color:#e0e3d9}footer a{color:white}.editlink{font-size:13px}.hidden{display:none}
+@media(max-width:1000px){header{flex-wrap:wrap}.nav{gap:14px}.split{grid-template-columns:1fr;gap:27px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card,.card:nth-child(4),.card:nth-child(5){grid-column:auto}.card:last-child:nth-child(odd){grid-column:1/-1}.projects{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){body{font-size:16px}header{align-items:flex-start;flex-direction:column;gap:6px}.brand img{width:67px}.nav{gap:12px}.nav a{font-size:12px}.nav .navcta{padding:9px 12px}.hero{min-height:530px;background-position:42% center}.hero-content{padding:60px 18px;margin-left:15px}.container{padding:59px 20px}.cards{grid-template-columns:1fr}.card:last-child:nth-child(odd){grid-column:auto}.projects{grid-template-columns:1fr}.art{height:115px}.panel{padding:28px}.motto{padding:54px 22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+<script src="assets/contenu.js"></script>
+</head>
+<body>
+<header><a class="brand" href="#accueil"><img src="assets/logo.png" alt="Symbole officiel d'Ancrage et Horizons"><span>Ancrage et Horizons</span></a><nav class="nav" aria-label="Navigation principale"><a href="#association">L'association</a><a href="#activites">Nos activités</a><a href="#projets">Nos projets</a><a href="#contact">Contact</a><a class="navcta" id="nav-adhesion" href="#adherer">Adhérer</a></nav></header>
+<main>
+<section class="hero" id="accueil"><div class="hero-content"><div class="eyebrow" id="hero-eyebrow">Association guadeloupéenne</div><h1 id="hero-title">Relier le vivant, agir ensemble.</h1><p class="hero-kicker" id="hero-kicker">Grandir, découvrir, transmettre.</p><p class="hero-lead" id="hero-lead"></p><div class="btns"><a class="btn" href="#activites">Découvrir nos actions</a><a class="btn alt" id="hero-adhesion" href="#adherer">Rejoindre l'association</a></div></div></section>
+<section class="section-muted" id="association"><div class="container split"><div class="text-stack"><div class="eyebrow" id="intro-eyebrow"></div><h2 id="intro-title"></h2><div id="intro-paragraphs"></div></div><aside class="panel"><div class="eyebrow">Notre conviction</div><h2 id="mission-title"></h2><p id="mission-lead"></p></aside></div></section>
+<section class="container" id="activites"><div class="intro"><div class="eyebrow" id="actions-eyebrow"></div><h2 id="actions-title"></h2><p id="actions-lead"></p></div><div class="cards" id="action-cards"></div></section>
+<section class="motto"><div class="motto-inner"><div class="eyebrow">Notre approche</div><h2 id="motto-title"></h2><p id="motto-text"></p></div></section>
+<section class="caribbean"><div class="container split"><div class="text-stack"><div class="eyebrow" id="caribbean-eyebrow"></div><h2 id="caribbean-title"></h2><div id="caribbean-paragraphs"></div></div><aside class="panel"><div class="eyebrow">Guadeloupe · Caraïbe</div><h2>Des territoires à découvrir, des cultures à rencontrer.</h2><p>De notre archipel aux îles voisines, chaque rencontre est une occasion d'apprendre, de partager et d'élargir notre regard.</p></aside></div></section>
+<section class="container" id="projets"><div class="intro"><div class="eyebrow" id="projects-eyebrow"></div><h2 id="projects-title"></h2><p id="projects-lead"></p></div><div class="projects" id="projects-list"></div></section>
+<section class="join" id="adherer"><div class="inner"><div class="eyebrow">Participer & soutenir</div><h2 id="join-title"></h2><p id="join-text"></p><a class="btn" id="join-adhesion" href="#contact">Nous contacter</a><p class="notice" id="adhesion-notice" style="margin-top:22px">Les adhésions et inscriptions seront gérées sur AssoConnect. L'accès sera ajouté avant publication.</p></div></section>
+<section class="container" id="contact"><div class="intro intro-narrow"><div class="eyebrow">Restons en lien</div><h2 id="contact-title"></h2><p class="contact-text" id="contact-text"></p><p class="notice" id="contact-info" style="margin-top:16px"></p></div></section>
+</main>
+<footer><div><strong>Ancrage et Horizons</strong><br><small>Relier le vivant, agir ensemble · Guadeloupe & Caraïbe</small></div><div><small>Site en cours de construction — coordonnées et liens à compléter</small></div></footer>
+<script>
+(function(){
+const originals=window.AH_CONTENT||{};
+function el(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!=null)node.textContent=text;return node}
+function put(id,text){const node=document.getElementById(id);if(node)node.textContent=text||''}
+function paragraphs(id,items){const node=document.getElementById(id);node.replaceChildren(...(Array.isArray(items)?items:[]).filter(Boolean).map(s=>el('p','',s)))}
+function render(d){
+ const fields={'hero-eyebrow':'heroEyebrow','hero-title':'heroTitle','hero-kicker':'heroKicker','hero-lead':'heroLead','intro-eyebrow':'introEyebrow','intro-title':'introTitle','mission-title':'missionTitle','mission-lead':'missionLead','actions-eyebrow':'actionsEyebrow','actions-title':'actionsTitle','actions-lead':'actionsLead','motto-title':'mottoTitle','motto-text':'mottoText','caribbean-eyebrow':'caribbeanEyebrow','caribbean-title':'caribbeanTitle','projects-eyebrow':'projectsEyebrow','projects-title':'projectsTitle','projects-lead':'projectsLead','join-title':'joinTitle','join-text':'joinText','contact-title':'contactTitle','contact-text':'contactText','contact-info':'contactInfo'};
+ for(const [id,key] of Object.entries(fields))put(id,d[key]);
+ paragraphs('intro-paragraphs',d.introParagraphs);paragraphs('caribbean-paragraphs',d.caribbeanParagraphs);
+ const heroImage=String(d.heroImage||'/assets/accueil.webp');
+ if (/^(\/|assets\/|https:\/\/)/i.test(heroImage) && !/["'<>\n\r]/.test(heroImage)) {
+   document.getElementById('accueil').style.backgroundImage=`linear-gradient(90deg,rgba(10,35,29,.76),rgba(10,35,29,.26)),url("${heroImage}")`;
+ }
+ const adhesionUrl=String(d.adhesionUrl||'').trim();
+ if (/^https:\/\//i.test(adhesionUrl)) {
+   for (const id of ['nav-adhesion','hero-adhesion','join-adhesion']) {const link=document.getElementById(id);link.href=adhesionUrl;link.target='_blank';link.rel='noopener noreferrer'}
+   document.getElementById('join-adhesion').textContent='Adhérer sur AssoConnect';
+   document.getElementById('adhesion-notice').textContent='Adhésions et inscriptions sécurisées sur AssoConnect.';
+ }
+ const cards=(Array.isArray(d.actions)?d.actions:[]).map(action=>{const card=el('article','card');const art=el('div','art',action.icon||'🌿');art.setAttribute('aria-hidden','true');const body=el('div','card-body');body.append(el('h3','',action.title),el('p','kicker',action.kicker),el('p','description',action.description));card.append(art,body);return card});document.getElementById('action-cards').replaceChildren(...cards);
+ const projects=(Array.isArray(d.projects)?d.projects:[]).map(p=>{const card=el('article','project');card.append(el('h3','',p.title),el('p','',p.description));return card});document.getElementById('projects-list').replaceChildren(...projects);
+}
+window.addEventListener('message',e=>{if(e.data&&e.data.type==='AH_PREVIEW'&&e.data.content)render(e.data.content)});
+render(originals);
+})();
+</script>
+</body>
+</html>
