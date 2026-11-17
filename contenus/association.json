@@ -1,0 +1,55 @@
+{
+  "heroEyebrow": "QUI SOMMES-NOUS ?",
+  "heroTitle": "Des racines pour avancer, des horizons pour grandir.",
+  "heroLead": "Ancrage et Horizons crée des expériences pour découvrir son territoire, transmettre des savoirs, prendre soin de soi et aller à la rencontre des autres.",
+  "introTitle": "Une association guadeloupéenne, ouverte sur la Caraïbe",
+  "introParagraphs": [
+    "Créée en 2026, Ancrage et Horizons est une association loi 1901 qui place la découverte, la transmission, la rencontre et l’épanouissement humain au cœur de son action.",
+    "Notre conviction : chacun possède des ressources à découvrir, à cultiver et à partager. L’environnement naturel, culturel et humain peut contribuer à ce cheminement."
+  ],
+  "philosophyTitle": "S’ancrer pour mieux s’ouvrir",
+  "philosophyText": "Notre territoire n’est pas seulement un lieu où nous vivons. Les paysages, les mémoires, les cultures et les savoir-faire de Guadeloupe participent à ce que nous sommes. Connaître ses racines, c’est aussi s’ouvrir à d’autres horizons, notamment dans la Caraïbe et vers la Dominique.",
+  "convictionTitle": "Apprendre en lien avec le vivant",
+  "convictionText": "Observer un paysage, écouter une histoire, marcher ensemble, manipuler une matière, partager un repas ou rencontrer un artisan : nous croyons à la force des expériences concrètes, qui engagent le corps, l’esprit et la sensibilité.",
+  "workshopEyebrow": "AU CŒUR DE NOS ACTIONS",
+  "workshopTitle": "Apprendre en faisant, transmettre en partageant",
+  "workshopText": "Créer, manipuler, observer, essayer, écouter, recommencer : les gestes partagés sont autant de façons d’apprendre autrement. À travers la découverte des savoir-faire artisanaux et culturels, les enfants et les jeunes peuvent développer leur curiosité et leur lien au territoire, accompagnés par des adultes transmetteurs.",
+  "workshopImage": "/assets/transmission-foret.webp",
+  "workshopCaption": "Illustration d’un atelier de transmission en forêt tropicale, créée pour présenter notre démarche. Elle ne représente pas une activité déjà réalisée par l’association.",
+  "wellnessTitle": "Nourrir l’esprit, nourrir le corps",
+  "wellnessText": "Nous défendons une approche globale de la personne, attentive à la santé physique et mentale, à la confiance en soi, à l’autonomie et au développement de ressources face aux difficultés. L’activité physique, le contact avec la nature, les moments partagés et une alimentation équilibrée valorisant les produits locaux ont toute leur place dans cette démarche. Nos activités ne se substituent pas à un accompagnement médical ou psychologique.",
+  "publicsTitle": "Des propositions adaptées aux personnes",
+  "publicsText": "Selon les projets, nos actions s’adressent aux enfants, aux jeunes, aux adultes, aux familles, aux seniors et aux personnes confrontées à des obstacles liés au handicap ou à leur situation sociale. Nous construisons les formats avec les établissements, associations, collectivités et partenaires concernés.",
+  "methodTitle": "Une pédagogie de l’expérience et du lien",
+  "methodText": "Partir du terrain, faire ensemble, transmettre les gestes et les histoires, relier ancrage local et ouverture caribéenne : ces principes guident la conception de nos projets.",
+  "valuesTitle": "Ce qui nous guide",
+  "values": [
+    {
+      "title": "Respect du vivant",
+      "text": "Reconnaître la richesse et la fragilité de nos milieux et de nos relations."
+    },
+    {
+      "title": "Transmission",
+      "text": "Faire circuler les savoirs, les mémoires et les gestes entre générations."
+    },
+    {
+      "title": "Inclusion",
+      "text": "Permettre à chacun de participer selon ses besoins et ses capacités."
+    },
+    {
+      "title": "Coopération",
+      "text": "Construire des projets et des rencontres avec les acteurs du territoire."
+    },
+    {
+      "title": "Ouverture",
+      "text": "Cultiver la curiosité et les échanges en Guadeloupe et dans la Caraïbe."
+    }
+  ],
+  "equipeTitle": "Une équipe engagée au service du projet",
+  "equipeText": "L’association est portée par un bureau engagé et un réseau de collaborateurs mobilisés selon les projets.",
+  "equipeImages": [],
+  "caribbeanTitle": "Ancrés en Guadeloupe, ouverts sur la Caraïbe",
+  "caribbeanText": "La Guadeloupe est notre point d’ancrage. Notre ouverture vers la Dominique et les territoires voisins nourrit la volonté de partager des expériences, des regards et des savoir-faire dans le respect de la diversité des cultures caribéennes.",
+  "ctaTitle": "Ensemble, ouvrons de nouveaux horizons",
+  "ctaText": "Vous partagez notre démarche ? Rejoignez l’association, découvrez nos projets ou échangeons sur une collaboration."
+}

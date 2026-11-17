@@ -4,6 +4,56 @@ media:
   input: assets
   output: /assets
 content:
+  - name: association
+    label: "L'association — page"
+    type: file
+    path: contenus/association.json
+    format: json
+    fields:
+      - { name: heroEyebrow, label: "Petit titre d’ouverture", type: string }
+      - { name: heroTitle, label: "Grand titre", type: string }
+      - { name: heroLead, label: "Texte sous le titre", type: text }
+      - { name: introTitle, label: "Titre de présentation", type: string }
+      - { name: philosophyTitle, label: "Titre — racines et ouverture", type: string }
+      - { name: philosophyText, label: "Texte — racines et ouverture", type: text }
+      - { name: convictionTitle, label: "Titre — notre conviction", type: string }
+      - { name: convictionText, label: "Texte — notre conviction", type: text }
+      - { name: workshopEyebrow, label: "Petit titre — atelier", type: string }
+      - { name: workshopTitle, label: "Titre — transmission", type: string }
+      - { name: workshopText, label: "Texte — transmission", type: text }
+      - { name: workshopImage, label: "Photo ou illustration de l’atelier", type: image }
+      - { name: workshopCaption, label: "Légende de l’illustration", type: text }
+      - { name: wellnessTitle, label: "Titre — corps et esprit", type: string }
+      - { name: wellnessText, label: "Texte — santé et alimentation", type: text }
+      - { name: publicsTitle, label: "Titre — publics", type: string }
+      - { name: publicsText, label: "Texte — publics", type: text }
+      - { name: methodTitle, label: "Titre — méthode", type: string }
+      - { name: methodText, label: "Texte — méthode", type: text }
+      - { name: valuesTitle, label: "Titre — valeurs", type: string }
+      - { name: equipeTitle, label: "Titre — équipe", type: string }
+      - { name: equipeText, label: "Texte de présentation de l’équipe", type: text }
+      - { name: caribbeanTitle, label: "Titre — Caraïbe", type: string }
+      - { name: caribbeanText, label: "Texte — Caraïbe", type: text }
+      - { name: ctaTitle, label: "Titre — rejoindre", type: string }
+      - { name: ctaText, label: "Texte — rejoindre", type: text }
+      - name: introParagraphs
+        label: "Paragraphes de présentation"
+        type: text
+        list: true
+      - name: values
+        label: "Nos valeurs"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: "Nom de la valeur", type: string }
+          - { name: text, label: "Description", type: text }
+      - name: equipeImages
+        label: "Photographies de l'équipe (à ajouter plus tard)"
+        type: image
+        list: true
   - name: accueil
     label: "Accueil et présentation"
     type: file

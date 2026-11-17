@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir, copyFile, rm } from 'node:fs/promises';
 import path from 'node:path';
-const names = ['accueil','domaines','caraibe','projets','participer'];
+const names = ['accueil','domaines','caraibe','projets','participer','association'];
 const content = {};
 for(const name of names){
   const raw=await readFile(path.join('contenus', name+'.json'),'utf8');
@@ -9,6 +9,8 @@ for(const name of names){
 await rm('dist',{recursive:true,force:true});
 await mkdir('dist/assets',{recursive:true});
 await copyFile('index.html','dist/index.html');
+await mkdir('dist/association',{recursive:true});
+await copyFile('association/index.html','dist/association/index.html');
 await copyFile('assets/logo.png','dist/assets/logo.png');
 await copyFile('assets/accueil.webp','dist/assets/accueil.webp');
 // Copy all other images in the asset folder, including those uploaded by Pages CMS.
