@@ -1,23 +1,36 @@
-import { readFile, writeFile, mkdir, copyFile, rm } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, rm, readdir } from 'node:fs/promises';
 import path from 'node:path';
-const names = ['accueil','domaines','caraibe','projets','participer','association'];
-const content = {};
-for(const name of names){
-  const raw=await readFile(path.join('contenus', name+'.json'),'utf8');
-  Object.assign(content, JSON.parse(raw));
+
+const homeFiles = ['accueil', 'domaines', 'caraibe', 'projets', 'participer'];
+const pageFiles = ['association', 'activites'];
+const home = {};
+const pages = {};
+
+for (const name of homeFiles) {
+  const raw = await readFile(path.join('contenus', `${name}.json`), 'utf8');
+  Object.assign(home, JSON.parse(raw));
 }
-await rm('dist',{recursive:true,force:true});
-await mkdir('dist/assets',{recursive:true});
-await copyFile('index.html','dist/index.html');
-await mkdir('dist/association',{recursive:true});
-await copyFile('association/index.html','dist/association/index.html');
-await copyFile('assets/logo.png','dist/assets/logo.png');
-await copyFile('assets/accueil.webp','dist/assets/accueil.webp');
-// Copy all other images in the asset folder, including those uploaded by Pages CMS.
-const { readdir } = await import('node:fs/promises');
-for(const filename of await readdir('assets')) {
-  if (filename === 'logo.png' || filename === 'accueil.webp') continue;
-  await copyFile(path.join('assets',filename),path.join('dist/assets',filename));
+for (const name of pageFiles) {
+  const raw = await readFile(path.join('contenus', `${name}.json`), 'utf8');
+  pages[name] = JSON.parse(raw);
 }
-await writeFile('dist/assets/contenu.js', 'window.AH_CONTENT = '+JSON.stringify(content,null,2)+';\n', 'utf8');
-console.log('Site construit : dist/');
+
+await rm('dist', { recursive: true, force: true });
+await mkdir('dist/assets', { recursive: true });
+await copyFile('index.html', 'dist/index.html');
+for (const name of pageFiles) {
+  await mkdir(`dist/${name}`, { recursive: true });
+  await copyFile(`${name}/index.html`, `dist/${name}/index.html`);
+}
+// Keep all current images, including those later uploaded through Pages CMS.
+for (const name of await readdir('assets')) {
+  const source = path.join('assets', name);
+  // We only keep image files here. Subdirectories, if introduced, need separate handling.
+  const { stat } = await import('node:fs/promises');
+  if (!(await stat(source)).isFile()) continue;
+  await copyFile(source, path.join('dist/assets', name));
+}
+await writeFile('dist/assets/contenu.js',
+  'window.AH_CONTENT = ' + JSON.stringify(home) + ';\n' +
+  'window.AH_PAGES = ' + JSON.stringify(pages) + ';\n', 'utf8');
+console.log('Site construit avec accueil, association, activites : dist/');

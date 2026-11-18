@@ -1,0 +1,70 @@
+{
+  "heroEyebrow": "NOS ACTIVITÉS",
+  "heroTitle": "Explorer, apprendre, partager, s’épanouir",
+  "heroLead": "Chez Ancrage et Horizons, nous imaginons des expériences qui mettent les personnes en relation avec leur environnement, leur culture et les autres.",
+  "introParagraphs": [
+    "Nos activités prennent des formes variées : randonnées, découvertes pédagogiques, ateliers, rencontres, pratiques sportives et moments de ressourcement.",
+    "Elles reposent sur une même conviction : c’est en vivant des expériences que l’on développe sa curiosité, ses capacités et ses liens avec le monde."
+  ],
+  "sectionEyebrow": "NOS CINQ DOMAINES D’ACTION",
+  "sectionTitle": "Cinq façons de découvrir et de grandir",
+  "areas": [
+    {
+      "slug": "education",
+      "label": "Éducation & jeunesse",
+      "title": "Apprendre autrement, découvrir par l’expérience",
+      "description": "Nous faisons du territoire un espace d’apprentissage vivant. À travers les randonnées pédagogiques, l’observation des milieux naturels, les ateliers pratiques et les projets collectifs, nous encourageons les enfants et les jeunes à expérimenter, questionner et construire leurs connaissances. Nos propositions favorisent la curiosité, la coopération, l’autonomie et la confiance en soi, en complément des apprentissages scolaires.",
+      "approaches": "Pédagogie de terrain · École hors les murs · Ateliers de découverte · Expériences collectives",
+      "image": "/assets/activite-education.webp",
+      "alt": "Illustration : enfants découvrant des plantes avec une accompagnante en forêt tropicale."
+    },
+    {
+      "slug": "nature",
+      "label": "Nature & territoires",
+      "title": "Explorer, comprendre et préserver le vivant",
+      "description": "Forêts tropicales, littoraux, montagnes, mares et paysages ruraux constituent autant de lieux de découverte et d’expérience. Nous invitons les participants à observer les écosystèmes, comprendre leurs interactions et reconnaître les liens qui unissent les activités humaines à leur environnement. De la Guadeloupe aux territoires caribéens voisins, notamment la Dominique, nos activités encouragent une relation curieuse, sensible et respectueuse avec le vivant.",
+      "approaches": "Découverte des milieux · Randonnée · Observation environnementale · Sensibilisation à la préservation des territoires",
+      "image": "/assets/accueil.webp",
+      "alt": "Illustration de forêt tropicale et de montagne avec un marcheur."
+    },
+    {
+      "slug": "culture",
+      "label": "Cultures, patrimoine & savoir-faire",
+      "title": "Retrouver ses racines, transmettre et créer",
+      "description": "Notre territoire participe à la construction de notre identité. Nous valorisons les mémoires, les pratiques artisanales, les traditions et les savoir-faire qui témoignent de la richesse culturelle de la Guadeloupe et de la Caraïbe. Rencontrer un artisan, découvrir la vannerie, travailler une calebasse ou écouter un récit sont autant d’occasions d’apprendre, de créer et de transmettre entre générations. Nous encourageons aussi la découverte des cultures caribéennes voisines, dans le respect de leurs histoires et de leurs singularités.",
+      "approaches": "Ateliers artisanaux · Patrimoine vivant · Transmission intergénérationnelle · Découvertes culturelles et échanges caribéens",
+      "image": "/assets/transmission-foret.webp",
+      "alt": "Illustration : enfants et adulte autour d’un atelier de calebasse et de vannerie en forêt."
+    },
+    {
+      "slug": "solidarite",
+      "label": "Solidarité & inclusion",
+      "title": "Créer du lien, permettre à chacun de participer",
+      "description": "Nous souhaitons que les expériences de découverte, d’apprentissage et de partage soient accessibles à des publics aussi divers que possible. Selon les projets, nous adaptons nos activités aux enfants, aux jeunes, aux familles, aux seniors et aux personnes confrontées à des difficultés sociales ou à des situations de handicap. Nous accordons une place particulière à la coopération, à l’écoute, au respect des différences et à la reconnaissance des capacités de chacun.",
+      "approaches": "Activités adaptées · Rencontres intergénérationnelles · Participation collective · Découverte et lien social",
+      "image": "/assets/activite-solidarite.webp",
+      "alt": "Illustration : une femme âgée échange avec deux jeunes lors d’un moment partagé."
+    },
+    {
+      "slug": "sante",
+      "label": "Sport, santé & épanouissement",
+      "title": "Bouger, se ressourcer, développer ses ressources",
+      "description": "Nous encourageons une approche globale du bien-être, attentive à la santé physique et mentale, à la confiance en soi et au développement personnel. La marche, la randonnée, les activités de plein air et les expériences collectives offrent des occasions de retrouver le plaisir de bouger, de découvrir ses capacités et de renforcer ses ressources personnelles. La résilience fait partie de notre démarche : nous cherchons à créer des situations favorisant l’autonomie, l’adaptation, la coopération et la confiance face aux difficultés. Nous accordons également une attention particulière à une alimentation équilibrée, valorisant les produits locaux, les saveurs du territoire et le plaisir de partager des repas.",
+      "approaches": "Activité physique adaptée aux participants · Randonnée · Ressourcement · Alimentation locale et équilibrée · Compétences psychosociales",
+      "image": "/assets/activite-sport.webp",
+      "alt": "Illustration : une personne en randonnée face à un panorama de montagne."
+    }
+  ],
+  "transverseEyebrow": "NOTRE APPROCHE TRANSVERSALE",
+  "transverseTitle": "Des expériences qui relient nos domaines",
+  "transverseIntro": "Nos activités ne se limitent pas toujours à un seul domaine.",
+  "transverseExamples": [
+    "Une randonnée peut associer activité physique, découverte des écosystèmes, patrimoine culturel et confiance en soi.",
+    "Un atelier artisanal peut réunir transmission culturelle, créativité, rencontre intergénérationnelle et apprentissage par l’expérience.",
+    "Un repas partagé peut devenir un moment de découverte des produits locaux, d’éducation alimentaire et de convivialité."
+  ],
+  "transverseConclusion": "C’est cette complémentarité qui donne son sens à notre démarche.",
+  "ctaTitle": "Découvrez nos projets",
+  "ctaText": "Nos domaines d’action prennent vie à travers des projets conçus avec les établissements, les structures partenaires et les acteurs des territoires.",
+  "imageCaption": "Visuels d’illustration de notre démarche ; ils ne représentent pas nécessairement des activités déjà réalisées par l’association."
+}

@@ -41,7 +41,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:22px;pa
 }
 
 </style><script src="../assets/contenu.js"></script></head><body>
-<header><a class="brand" href="/"><img src="../assets/logo.png" alt="Symbole officiel d’Ancrage et Horizons"><span>Ancrage et Horizons</span></a><nav class="nav" aria-label="Navigation principale"><a href="/association/" aria-current="page">L’association</a><a href="/#activites">Nos activités</a><a href="/#projets">Nos projets</a><a href="/#contact">Contact</a><a class="navcta" href="/#adherer" id="nav-adhesion">Adhérer</a></nav></header>
+<header><a class="brand" href="/"><img src="../assets/logo.png" alt="Symbole officiel d’Ancrage et Horizons"><span>Ancrage et Horizons</span></a><nav class="nav" aria-label="Navigation principale"><a href="/association/" aria-current="page">L’association</a><a href="/activites/">Nos activités</a><a href="/#projets">Nos projets</a><a href="/#contact">Contact</a><a class="navcta" href="/#adherer" id="nav-adhesion">Adhérer</a></nav></header>
 <main>
 <section class="hero-association"><div class="hero-content"><div class="eyebrow" data-field="heroEyebrow"></div><h1 data-field="heroTitle"></h1><p class="hero-lead" data-field="heroLead"></p></div></section>
 <section class="page-section"><div class="inner two-col"><div><div class="eyebrow">L’association</div><h2 data-field="introTitle"></h2><div id="introParagraphs"></div></div><aside class="panel"><div class="eyebrow">Notre philosophie</div><h2 data-field="philosophyTitle"></h2><p data-field="philosophyText"></p></aside></div></section>
@@ -55,7 +55,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:22px;pa
 <section class="page-section cta-asso"><div class="inner"><div class="eyebrow">Et maintenant ?</div><h2 data-field="ctaTitle"></h2><p data-field="ctaText"></p><div class="btns" style="justify-content:center"><a class="btn" href="/#projets">Découvrir nos projets</a><a class="btn" href="/#contact" style="background:var(--green);color:white">Nous contacter</a></div></div></section>
 </main><footer><div><strong>Ancrage et Horizons</strong><br><small>Relier le vivant, agir ensemble · Guadeloupe & Caraïbe</small></div><div><small>Site en construction — <a href="/">Retour à l’accueil</a></small></div></footer>
 <script>
-(()=>{const d=window.AH_CONTENT||{};for(const el of document.querySelectorAll('[data-field]'))el.textContent=d[el.dataset.field]||'';
+(()=>{const d=(window.AH_PAGES&&window.AH_PAGES.association)||{};for(const el of document.querySelectorAll('[data-field]'))el.textContent=d[el.dataset.field]||'';
 const paras=document.querySelector('#introParagraphs');for(const v of d.introParagraphs||[]){const x=document.createElement('p');x.textContent=v;paras.append(x)}
 const values=document.querySelector('#valueCards');for(const val of d.values||[]){const card=document.createElement('div');card.className='pill';const h=document.createElement('h3');h.textContent=val.title||'';const x=document.createElement('p');x.textContent=val.text||'';card.append(h,x);values.append(card)}
 const img=d.workshopImage;if(typeof img==='string'&&(/^(\/|\.\.\/|https:\/\/)/.test(img))&&!/["'<>]/.test(img))document.querySelector('#workshopImage').src=img;
