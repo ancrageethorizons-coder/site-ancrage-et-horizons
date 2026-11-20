@@ -15,7 +15,7 @@
 
 **Contact** : ancrageethorizons@gmail.com — +590 690 92 13 35 (numéro public antérieurement communiqué ; à vérifier avant publication).
 
-**Hébergement du site** : Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, États-Unis. Contact : support@netlify.com. Informations tirées des conditions d'utilisation Netlify en vigueur en novembre 2026, à revalider si l'hébergeur change : https://www.netlify.com/legal/terms-of-use/
+**Hébergement du site** : Cloudflare Pages (Cloudflare, Inc.). Adresse et coordonnées légales complètes de l'hébergeur à vérifier dans les mentions officielles de Cloudflare avant publication : https://www.cloudflare.com/privacypolicy/ .
 
 **Propriété intellectuelle** : les textes et éléments graphiques utilisés sont soumis aux droits de leurs ayants droit respectifs. Les visuels d'illustration sont distingués des photos d'activités effectivement réalisées.
 
@@ -25,7 +25,7 @@ Ce document **n'est pas encore complet**. Avant sa publication, vérifier les fl
 
 - **Responsable du traitement pour les adhésions** : l'association Ancrage et Horizons (à confirmer avec les contrats AssoConnect).
 - **Point de contact pour l'exercice des droits** : ancrageethorizons@gmail.com.
-- **Site vitrine Netlify** : déterminer les journaux techniques, éventuels outils statistiques, cookies ou autres traceurs présents en production.
+- **Site vitrine Cloudflare Pages** : déterminer les journaux techniques, éventuels outils statistiques, cookies ou autres traceurs présents en production.
 - **Adhésions** : les formulaires d'inscription sont hébergés sur la plateforme AssoConnect. Rédiger les catégories de données collectées, finalités, bases légales, destinataires, durées de conservation, éventuels transferts hors EEE et mesures de sécurité en cohérence avec la configuration et les contrats réels.
 - **Paiements** : expliquer que les paiements sont opérés via AssoConnect et ses prestataires, avec une information conforme aux contrats et aux modalités de traitement effectivement applicables.
 - **Mineurs** : mentionner le processus d'accord du représentant légal tel que validé par l'association et sa configuration réelle.
@@ -41,7 +41,7 @@ Sources de cadrage : https://www.cnil.fr/fr/rgpd-en-pratique-communiquer-en-lign
 - [ ] Relire l'adresse du siège et accepter sa publication sur le site.
 - [ ] Vérifier RNA, SIREN et SIRET sur les documents officiels disponibles.
 - [ ] Confirmer le numéro de téléphone public à afficher.
-- [ ] Vérifier l'adresse postale de Netlify telle que publiée dans ses documents courants.
+- [ ] Vérifier les coordonnées officielles de Cloudflare telle que publiée dans ses documents courants.
 - [ ] Compléter la politique de données personnelles avec la configuration réelle des outils.
 - [ ] Mettre à disposition les pages juridiques sur le site et ajouter les liens dans tous les pieds de page.
 
