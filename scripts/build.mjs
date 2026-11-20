@@ -26,10 +26,26 @@ for (const name of pageFiles) {
 const projectsData = JSON.parse(await readFile('contenus/projets.json', 'utf8'));
 const escapeHTML = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const projectsTemplate = await readFile('projets/index.html', 'utf8');
-const projectsCards = (projectsData.projects || []).map(project =>
-  '<article class="card"><p class="status">Projet en préparation ou en développement</p><h2>' +
-  escapeHTML(project.title) + '</h2><p>' + escapeHTML(project.description) + '</p></article>'
-).join('');
+const projectPhoto = (src, alt, caption, cssClass) => {
+  // Only locally uploaded image assets; leave empty when a photo is not provided.
+  if (typeof src !== 'string' || !/^\/assets\/[a-z0-9._%+ -]+\.(?:png|jpe?g|webp|avif)$/i.test(src) || src.includes('..')) return '';
+  const captionHTML = caption ? '<figcaption>' + escapeHTML(caption) + '</figcaption>' : '';
+  return '<figure class="' + cssClass + '"><img loading="lazy" src="' + escapeHTML(src) +
+         '" alt="' + escapeHTML(alt || 'Photographie du projet') + '">' + captionHTML + '</figure>';
+};
+const projectsCards = (projectsData.projects || []).map((project, index) => {
+  const cover = projectPhoto(project.coverImage, project.coverAlt || project.title, project.coverCaption, 'cover');
+  const paragraphs = String(project.details || '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean)
+    .map(p => '<p>' + escapeHTML(p) + '</p>').join('');
+  const gallery = (Array.isArray(project.gallery) ? project.gallery : []).map(photo =>
+    projectPhoto(photo.image, photo.alt || project.title, photo.caption, 'photo')
+  ).filter(Boolean).join('');
+  const extra = paragraphs || gallery ? '<details class="details-toggle"><summary>En savoir plus sur ce projet</summary>' +
+    '<div class="details-copy">' + paragraphs + '</div>' + (gallery ? '<div class="gallery">' + gallery + '</div>' : '') + '</details>' : '';
+  return '<article class="card" id="projet-' + (index + 1) + '">' + cover + '<div class="card-body">' +
+    '<p class="status">' + escapeHTML(project.status || 'Projet en développement') + '</p><h2>' +
+    escapeHTML(project.title) + '</h2><p>' + escapeHTML(project.description) + '</p>' + extra + '</div></article>';
+}).join('');
 await mkdir('dist/projets', {recursive:true});
 await writeFile('dist/projets/index.html',
   projectsTemplate.replace('{{PROJECTS_LEAD}}', escapeHTML(projectsData.projectsLead))
