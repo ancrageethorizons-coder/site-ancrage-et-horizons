@@ -34,3 +34,14 @@ await writeFile('dist/assets/contenu.js',
   'window.AH_CONTENT = ' + JSON.stringify(home) + ';\n' +
   'window.AH_PAGES = ' + JSON.stringify(pages) + ';\n', 'utf8');
 console.log('Site construit avec accueil, association, activites : dist/');
+
+const canonicalBase = 'https://ancrageethorizons.netlify.app';
+const publicPages = ['/', '/association/', '/activites/'];
+const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  publicPages.map(p => '  <url><loc>' + escapeXml(canonicalBase + p) + '</loc></url>').join('\n') +
+  '\n</urlset>\n';
+await writeFile('dist/sitemap.xml', sitemap, 'utf8');
+await writeFile('dist/robots.txt', 'User-agent: *\nAllow: /\n\nSitemap: ' + canonicalBase + '/sitemap.xml\n', 'utf8');
+// IMPORTANT: HTML pages still contain noindex,nofollow while the site is under preparation.
