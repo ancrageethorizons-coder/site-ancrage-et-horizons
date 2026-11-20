@@ -106,7 +106,7 @@ content:
       - { name: caribbeanTitle, label: "Titre", type: string }
       - { name: caribbeanParagraphs, label: "Paragraphes", type: text, list: true }
   - name: projets
-    label: "Projets"
+    label: "Nos projets — textes et photos"
     type: file
     path: contenus/projets.json
     format: json
@@ -115,7 +115,7 @@ content:
       - { name: projectsTitle, label: "Titre", type: string }
       - { name: projectsLead, label: "Introduction", type: text }
       - name: projects
-        label: "Fiches courtes des projets"
+        label: "Fiches des projets"
         type: object
         list:
           collapsible:
@@ -123,7 +123,23 @@ content:
             summary: "{title}"
         fields:
           - { name: title, label: "Nom du projet", type: string }
-          - { name: description, label: "Résumé", type: text }
+          - { name: status, label: "Statut ou historique du projet", type: string, description: "Ne pas attribuer à A&H les actions réalisées auparavant dans une autre association." }
+          - { name: description, label: "Résumé pour l'accueil et la liste", type: text }
+          - { name: details, label: "Présentation détaillée du projet", type: text }
+          - { name: coverImage, label: "Photographie principale (facultative)", type: image }
+          - { name: coverAlt, label: "Description accessible de la photo principale", type: string }
+          - { name: coverCaption, label: "Légende et crédit de la photo principale", type: text }
+          - name: gallery
+            label: "Galerie photo du projet"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{caption}"
+            fields:
+              - { name: image, label: "Photographie", type: image }
+              - { name: alt, label: "Description pour l'accessibilité", type: string }
+              - { name: caption, label: "Légende, lieu et crédit", type: text }
   - name: participer
     label: "Adhésions et contact"
     type: file
