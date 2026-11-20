@@ -1,27 +1,57 @@
 {
   "projectsEyebrow": "Nos projets",
   "projectsTitle": "Des expériences qui prennent forme",
-  "projectsLead": "Découvrez plusieurs initiatives en préparation ou en développement. Leur présentation évoluera au fil de leur avancement.",
+  "projectsLead": "Certains projets ont déjà été expérimentés dans un autre cadre associatif ; d'autres sont en préparation. Découvrez leurs démarches et les initiatives présentées par Ancrage et Horizons.",
   "projects": [
     {
       "title": "Zayann Ekspéryans",
-      "description": "Des expériences de terrain pour les jeunes, au croisement des apprentissages, de la découverte et de l'autonomie."
+      "description": "Des expériences de terrain pour les jeunes, au croisement des apprentissages, de la découverte et de l'autonomie. Ce projet a déjà été réalisé dans un autre cadre associatif.",
+      "status": "Expérience déjà réalisée dans un autre cadre associatif",
+      "details": "Des expériences de terrain ont déjà été conduites sous ce nom dans le cadre d'une autre association. Leur présentation ici permet de valoriser la démarche pédagogique et l'expérience acquise, sans attribuer ces réalisations antérieures à Ancrage et Horizons. Les nouvelles actions portées par l'association seront présentées à mesure de leur réalisation.",
+      "coverImage": "",
+      "coverAlt": "",
+      "coverCaption": "",
+      "gallery": []
     },
     {
       "title": "Le chemin de l'école hors les murs",
-      "description": "Des sorties et des parcours pédagogiques qui font du territoire une salle de classe à ciel ouvert."
+      "description": "Des sorties et parcours pédagogiques conçus dans la commune de chaque établissement scolaire participant : son environnement devient une salle de classe à ciel ouvert.",
+      "status": "Projet en développement",
+      "details": "Le principe est de construire chaque promenade à partir de la commune où se situe l'établissement scolaire participant. L'environnement proche, ses paysages, son patrimoine et ses ressources deviennent des supports d'observation, de découverte et d'apprentissage. Les parcours et activités sont adaptés au territoire communal et aux objectifs pédagogiques définis avec l'établissement.",
+      "coverImage": "",
+      "coverAlt": "",
+      "coverCaption": "",
+      "gallery": []
     },
     {
       "title": "Racines et Horizons",
-      "description": "Un projet de découverte des milieux, du patrimoine et des expériences partagées, notamment à Marie-Galante."
+      "description": "Des expériences de découverte des milieux naturels et du patrimoine, notamment à Marie-Galante, déjà réalisées dans un autre cadre associatif.",
+      "status": "Expérience déjà réalisée dans un autre cadre associatif",
+      "details": "Des expériences de découverte des milieux et du patrimoine ont déjà eu lieu, notamment à Marie-Galante, dans le cadre d'une autre association. Ancrage et Horizons présente cette expérience comme un acquis antérieur, sans revendiquer en être l'organisateur. Les prochains développements seront précisés selon les partenariats et les projets effectivement engagés.",
+      "coverImage": "",
+      "coverAlt": "",
+      "coverCaption": "",
+      "gallery": []
     },
     {
       "title": "Traversées · Dominique",
-      "description": "Un projet d'ouverture caribéenne mêlant découverte, rencontres et échanges autour de la Dominique."
+      "description": "Un projet d'ouverture caribéenne mêlant découverte, rencontres et échanges autour de la Dominique.",
+      "status": "Projet en préparation",
+      "details": "Un projet de découverte et d'échanges avec la Dominique, pensé dans une logique d'ouverture aux autres territoires caribéens. Ses modalités et son calendrier seront précisés une fois arrêtés.",
+      "coverImage": "",
+      "coverAlt": "",
+      "coverCaption": "",
+      "gallery": []
     },
     {
       "title": "Journées Ancrage",
-      "description": "Des expériences associant marche, découverte du territoire, moments de ressourcement et convivialité."
+      "description": "Des expériences associant marche, découverte du territoire, moments de ressourcement et convivialité.",
+      "status": "Projet en préparation",
+      "details": "Des journées mêlant découverte du territoire, activité physique accessible selon les participants, temps de ressourcement et convivialité. Les programmes et les dates seront présentés lorsqu'ils seront confirmés.",
+      "coverImage": "",
+      "coverAlt": "",
+      "coverCaption": "",
+      "gallery": []
     }
   ]
 }
