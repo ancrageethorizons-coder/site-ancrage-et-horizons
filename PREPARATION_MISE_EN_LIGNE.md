@@ -17,12 +17,13 @@
 - [x] URL canonique et métadonnées Open Graph pour chaque page
 - [x] Données structurées `Organization` sur l'accueil
 - [x] Construction automatique de `sitemap.xml` et `robots.txt` avec les quatre pages
-- [ ] Confirmer l'adresse définitive du site : `https://ancrageethorizons.netlify.app/` ou un domaine propre
-- [ ] Vérifier le site public sans connexion Netlify et le succès du dernier déploiement
+- [x] Adresse Cloudflare Pages confirmée : `https://ancrageethorizons.pages.dev/` (un domaine propre reste possible ultérieurement)
+- [x] Premier déploiement Cloudflare Pages réussi le 20 novembre 2026, d'après la capture de confirmation de l'association
+- [ ] Vérifier les pages et les assets publiquement sans connexion
 - [ ] **Après feu vert de lancement seulement :** supprimer `noindex,nofollow` des quatre pages
-- [ ] Vérifier qu'aucun contrôle d'accès Netlify ou en-tête HTTP `X-Robots-Tag: noindex` ne bloque le domaine de production
+- [ ] Vérifier qu'aucun contrôle d'accès Cloudflare ou en-tête HTTP `X-Robots-Tag: noindex` ne bloque le domaine de production
 - [ ] Ajouter le site à Google Search Console et vérifier la propriété
-- [ ] Soumettre `https://ancrageethorizons.netlify.app/sitemap.xml` (si domaine confirmé)
+- [ ] Soumettre `https://ancrageethorizons.pages.dev/sitemap.xml`
 - [ ] Inspecter chaque URL publiée dans Search Console ; l'indexation ne sera pas instantanée ni garantie
 
 ## Informations juridiques et RGPD — à compléter AVANT l'ouverture publique
