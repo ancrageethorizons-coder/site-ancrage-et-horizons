@@ -64,7 +64,7 @@ await writeFile('dist/assets/contenu.js',
   'window.AH_PAGES = ' + JSON.stringify(pages) + ';\n', 'utf8');
 console.log('Site construit avec accueil, association, activites, projets : dist/');
 
-const canonicalBase = 'https://ancrageethorizons.netlify.app';
+const canonicalBase = 'https://ancrageethorizons.pages.dev';
 const publicPages = ['/', '/association/', '/activites/', '/projets/'];
 const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
