@@ -132,7 +132,8 @@ content:
     fields:
       - { name: joinTitle, label: "Titre pour participer", type: string }
       - { name: joinText, label: "Texte pour participer", type: text }
-      - { name: adhesionUrl, label: "Lien HTTPS AssoConnect", type: string, description: "À compléter quand la page d'adhésion sera prête." }
+      - { name: supportAdhesionUrl, label: "Lien AssoConnect — membres de soutien", type: string }
+      - { name: activeAdhesionUrl, label: "Lien AssoConnect — membres actifs", type: string }
       - { name: contactTitle, label: "Titre contact", type: string }
       - { name: contactText, label: "Texte contact", type: text }
       - { name: contactInfo, label: "Coordonnées ou message temporaire", type: text }
