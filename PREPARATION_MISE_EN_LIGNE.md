@@ -32,7 +32,11 @@
 - [x] Numéro RNA `W9G1012339` confirmé par récépissé préfectoral du 14 septembre 2026 et publication JOAFE du 29 septembre 2026
 - [ ] Vérifier si un numéro SIREN/SIRET est à mentionner ; ne pas se fier à une fiche commerciale non confirmée
 - [x] Créer une notice « Protection des données personnelles » distinguant site vitrine, emails et AssoConnect (version de travail, 21 novembre 2026)
-- [ ] Faire valider les bases légales et surtout des durées de conservation précises ainsi que les sous-traitants/transferts potentiels avant de présenter la notice comme définitive
+- [x] Définir des durées-cibles de conservation dans la notice : courriels ordinaires 12 mois, anciens adhérents 3 ans, justificatifs comptables 10 ans (à appliquer et vérifier dans les outils)
+- [ ] Vérifier l'application des durées et les suppressions/archivages dans AssoConnect et la messagerie
+- [ ] Vérifier l'état réel de Cloudflare Web Analytics et les cookies/protections éventuellement activés
+- [ ] Vérifier le contrat de sous-traitance AssoConnect, les destinataires des règlements et les éventuels transferts hors EEE
+- [ ] Afficher la notice RGPD et son lien sur les deux formulaires AssoConnect avant collecte ; vérifier ces formulaires après le changement statutaire
 - [ ] Examiner les cookies/traceurs effectivement déposés sur le site vitrine et adapter les informations/consentements nécessaires
 - [x] Ajouter les liens Mentions légales et Protection des données au pied des quatre pages et entre les pages légales ; contrôler leur rendu déployé
 
