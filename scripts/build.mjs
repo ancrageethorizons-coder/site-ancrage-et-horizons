@@ -71,7 +71,17 @@ await writeFile('dist/assets/contenu.js',
 console.log('Site construit avec accueil, association, activites, projets : dist/');
 
 const canonicalBase = 'https://ancrageethorizons.pages.dev';
-const publicPages = ['/', '/association/', '/activites/', '/projets/', '/mentions-legales/', '/confidentialite/', '/conditions-adhesion/'];
+// Publication du site vitrine ; les conditions d’adhésion restent accessibles mais non indexées jusqu’au vote.
+const publicPages = ['/', '/association/', '/activites/', '/projets/', '/mentions-legales/', '/confidentialite/'];
+for (const route of publicPages) {
+  const htmlPath = path.join('dist', route.replace(/^\//, ''), 'index.html');
+  let html = await readFile(htmlPath, 'utf8');
+  html = html.replace('<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">');
+  if (!html.includes('rel="canonical"')) {
+    html = html.replace('</head>', '<link rel="canonical" href="' + canonicalBase + route + '">\n</head>');
+  }
+  await writeFile(htmlPath, html, 'utf8');
+}
 const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
@@ -79,4 +89,4 @@ const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '\n</urlset>\n';
 await writeFile('dist/sitemap.xml', sitemap, 'utf8');
 await writeFile('dist/robots.txt', 'User-agent: *\nAllow: /\n\nSitemap: ' + canonicalBase + '/sitemap.xml\n', 'utf8');
-// IMPORTANT: HTML pages still contain noindex,nofollow while the site is under preparation.
+// Source templates keep noindex during editing; published pages listed above opt in at build time.
