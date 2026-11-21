@@ -28,6 +28,11 @@
 
 ## Informations juridiques et RGPD — à compléter AVANT l'ouverture publique
 
+- [x] Publier en anticipation les CGUV 2027 sur `/conditions-adhesion/` et les relier depuis les pages publiques (21 novembre 2026)
+- [ ] Après l'AGE : contrôler l'adoption du nouvel article 8, mettre à jour la mention transitoire et vérifier le vote de l'AGO fixant les cotisations
+- [ ] Cocher « Ajouter des conditions générales » dans les deux formulaires AssoConnect et lier/joindre le texte révisé, puis vérifier l'affichage et l'acceptation côté adhérent
+
+
 - [x] Créer la page « Mentions légales » avec identité, siège, responsable de publication, coordonnées et hébergeur (publication GitHub le 21 novembre 2026 ; contrôler le rendu et confirmer le SIREN sur source officielle)
 - [x] Numéro RNA `W9G1012339` confirmé par récépissé préfectoral du 14 septembre 2026 et publication JOAFE du 29 septembre 2026
 - [ ] Vérifier si un numéro SIREN/SIRET est à mentionner ; ne pas se fier à une fiche commerciale non confirmée
