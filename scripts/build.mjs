@@ -18,6 +18,8 @@ for (const name of pageFiles) {
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist/assets', { recursive: true });
 await copyFile('index.html', 'dist/index.html');
+await mkdir('dist/mentions-legales', {recursive:true});
+await copyFile('mentions-legales/index.html','dist/mentions-legales/index.html');
 for (const name of pageFiles) {
   await mkdir(`dist/${name}`, { recursive: true });
   await copyFile(`${name}/index.html`, `dist/${name}/index.html`);
@@ -65,7 +67,7 @@ await writeFile('dist/assets/contenu.js',
 console.log('Site construit avec accueil, association, activites, projets : dist/');
 
 const canonicalBase = 'https://ancrageethorizons.pages.dev';
-const publicPages = ['/', '/association/', '/activites/', '/projets/'];
+const publicPages = ['/', '/association/', '/activites/', '/projets/', '/mentions-legales/'];
 const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
