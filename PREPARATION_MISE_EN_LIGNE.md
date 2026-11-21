@@ -28,12 +28,13 @@
 
 ## Informations juridiques et RGPD — à compléter AVANT l'ouverture publique
 
-- [ ] Préparer la page « Mentions légales » à partir des informations **officielles validées** de l'association : identité, adresse de siège à publier, responsable de publication, coordonnées et hébergeur
-- [ ] Confirmer le numéro RNA sur la pièce officielle ; une fiche publique mentionne `W9G1012339`
+- [x] Créer la page « Mentions légales » avec identité, siège, responsable de publication, coordonnées et hébergeur (publication GitHub le 21 novembre 2026 ; contrôler le rendu et confirmer le SIREN sur source officielle)
+- [x] Numéro RNA `W9G1012339` confirmé par récépissé préfectoral du 14 septembre 2026 et publication JOAFE du 29 septembre 2026
 - [ ] Vérifier si un numéro SIREN/SIRET est à mentionner ; ne pas se fier à une fiche commerciale non confirmée
-- [ ] Préparer une information « Données personnelles » qui distingue le site vitrine et les formulaires AssoConnect (collecte, finalités, destinataires, durée de conservation et droits)
+- [x] Créer une notice « Protection des données personnelles » distinguant site vitrine, emails et AssoConnect (version de travail, 21 novembre 2026)
+- [ ] Faire valider les bases légales et surtout des durées de conservation précises ainsi que les sous-traitants/transferts potentiels avant de présenter la notice comme définitive
 - [ ] Examiner les cookies/traceurs effectivement déposés sur le site vitrine et adapter les informations/consentements nécessaires
-- [ ] Ajouter les liens légaux dans le pied de page de chaque page, une fois les textes vérifiés
+- [x] Ajouter les liens Mentions légales et Protection des données au pied des quatre pages et entre les pages légales ; contrôler leur rendu déployé
 
 ## Validation des contenus et qualité
 
