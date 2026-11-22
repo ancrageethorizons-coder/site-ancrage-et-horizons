@@ -18,6 +18,9 @@ for (const name of pageFiles) {
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist/assets', { recursive: true });
 await copyFile('index.html', 'dist/index.html');
+// Welcome panel for AssoConnect iframe: no private data; intentionally excluded from sitemap.
+await mkdir('dist/bienvenue-membres', {recursive:true});
+await copyFile('bienvenue-membres/index.html','dist/bienvenue-membres/index.html');
 await mkdir('dist/mentions-legales', {recursive:true});
 await copyFile('mentions-legales/index.html','dist/mentions-legales/index.html');
 await mkdir('dist/confidentialite', {recursive:true});
