@@ -75,7 +75,7 @@ await writeFile('dist/assets/contenu.js',
   'window.AH_PAGES = ' + JSON.stringify(pages) + ';\n', 'utf8');
 console.log('Site construit avec accueil, association, activites, projets : dist/');
 
-const canonicalBase = 'https://ancrageethorizons.pages.dev';
+const canonicalBase = 'https://ancrageethorizons.org';
 // Publication du site vitrine ; les conditions d’adhésion restent accessibles mais non indexées jusqu’au vote.
 const publicPages = ['/', '/association/', '/activites/', '/projets/', '/mentions-legales/', '/confidentialite/'];
 for (const route of publicPages) {
