@@ -82,6 +82,9 @@ for (const route of publicPages) {
   const htmlPath = path.join('dist', route.replace(/^\//, ''), 'index.html');
   let html = await readFile(htmlPath, 'utf8');
   html = html.replace('<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">');
+  // Normalize existing canonical and social URL tags as well as missing canonicals.
+  html = html.replace(/(<link\s+rel="canonical"\s+href=")[^"]*(")/gi, '$1' + canonicalBase + route + '$2');
+  html = html.replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/gi, '$1' + canonicalBase + route + '$2');
   if (!html.includes('rel="canonical"')) {
     html = html.replace('</head>', '<link rel="canonical" href="' + canonicalBase + route + '">\n</head>');
   }
